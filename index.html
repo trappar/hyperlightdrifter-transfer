@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div id="banner">
+    <img src="http://www.heart-machine.com/wp-content/uploads/2015/02/web_banner.jpg"/>
+    <h1>Save Transfer Helper</h1>
+</div>
+<br>
+<div class="container">
+    <h4>Transfering a save from one computer to another in Hyper Light Drifter is not as easy as it should be! This page
+        aims to fix that.</h4>
+    <p>You will need two save files for this to work. One from the computer you're transferring from and one from the
+        computer you're transferring to. If you don't have a save on the computer you're transfering to just start a new
+        game and exit once you're past the initial cutscenes.<br><br>These save files can be found in the following
+        locations
+        depending on your OS...</p>
+    <ul>
+        <li>PC - C:\Users\[username]\AppData\Local\HyperLightDrifter</li>
+        <li>
+            Mac - /Users/[username]/Library/Application Support/com.HeartMachine.HyperLightDrifter (while in Finder open
+            the "Go" toolbar and hold "option" to reveal a quick way to get to the Library directory)
+        </li>
+    </ul>
+    <p>Open these files in Notepad (PC) or TextEdit (Mac) and copy their contents into the fields below. <b>Don't worry
+        that it looks like gibberish!</b> It's all good :)</p>
+    <div class="row">
+        <div class="col-md-4">
+            <h5>Step 1: "From" computer save</h5>
+            <textarea class="form-control" id="fromsave" rows="5"></textarea>
+            <p>Enter the contents of your save file here</p>
+        </div>
+        <div class="col-md-4">
+            <h5>Step 2: "To" computer save</h5>
+            <textarea class="form-control" id="tosave" rows="5"></textarea>
+            <p>Enter the contents of your save file here</p>
+        </div>
+        <div class="col-md-4">
+            <h5>Step 3: Fixed save file</h5>
+            <textarea class="form-control" id="resultsave" rows="5"></textarea>
+            <p>Save this either over the file from step 2 or create a new one with a name like
+                "HyperLight_RecordOfTheDrifter_0.sav" where the number at the end is either 0/1/2/3</p>
+            <div id="error" class="alert alert-danger">Couldn't figure out how to create a valid save file from what you
+                entered. Double check your work and try again!
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <footer>
+        <p>&copy; Trappar 2016</p>
+    </footer>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

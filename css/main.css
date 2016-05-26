@@ -1,0 +1,24 @@
+p, li {
+    color: #ccc;
+}
+#banner {
+    position: relative;
+}
+#banner img {
+    width: 100%;
+}
+#banner h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+}
+
+#error {
+    display: none;
+}
