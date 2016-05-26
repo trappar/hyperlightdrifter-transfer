@@ -7,6 +7,9 @@ p, li {
 #banner img {
     width: 100%;
 }
+#banner h1 span {
+    display: none;
+}
 #banner h1 {
     position: absolute;
     bottom: 20px;
