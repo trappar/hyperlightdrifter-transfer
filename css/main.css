@@ -18,6 +18,14 @@ p, li {
     text-align: center;
 }
 
+@media (max-width: 600px) {
+    #banner h1 {
+        font-size: 40px;
+        top: 10px;
+        position: relative;
+    }
+}
+
 textarea {
     width: 100%;
 }
