@@ -8,8 +8,8 @@ $(function(){
         var fromVal = from.val();
         var toVal = to.val();
         if (fromVal.length > 10 && toVal.length > 10) {
-            var fromCompSave = fromVal.match(/eyAibWFwTW9kIjo.*/);
-            var toCompID = toVal.match(/^(.*)eyAibWFwTW9kIjo/);
+            var fromCompSave = fromVal.match(/eyAi.*/);
+            var toCompID = toVal.match(/^(.*)eyAi/);
             if (fromCompSave && toCompID) {
                 result.val(toCompID[1]+fromCompSave[0]);
                 error.hide();
